@@ -31,11 +31,11 @@ tasks.named<JacocoReport>("jacocoTestReport") {
 sonarqube  {
     properties {
         property("sonar.projectKey", "EmployeeManager")
-        property("sonar.projectName", "The-Rift-EmployeeManager")
-        property("sonar.sources", "java/com/atuyto")
+        property("sonar.projectName", "EmployeeManager")
+        property("sonar.sources", "src/main/java/com/atuyto")
         property("sonar.host.url", "https://condor-funky-completely.ngrok-free.app")
         property("sonar.token", "squ_69f986dd2782786dec9596bfd09b1de4c9dd6a76")
-        property("sonar.java.binaries", file("build/classes/java/debug"))
+        property("sonar.java.binaries", file("build/classes/java/main/com/atuyto"))
         property("sonar.jacoco.reportPaths", "reports/jacoco/test/testExec.xml")
     }
 }
