@@ -32,11 +32,11 @@ sonarqube  {
     properties {
         property("sonar.projectKey", "EmployeeManager")
         property("sonar.projectName", "The-Rift-EmployeeManager")
-        property("sonar.sources", "src/main/java/main")
+        property("sonar.sources", "java/com/atuyto")
         property("sonar.host.url", "https://condor-funky-completely.ngrok-free.app")
         property("sonar.token", "squ_69f986dd2782786dec9596bfd09b1de4c9dd6a76")
-        property("sonar.java.binaries", file("app/build/classes/java/debug"))
-        property("sonar.jacoco.reportPaths", "app/reports/jacoco/test/testExec.xml")
+        property("sonar.java.binaries", file("build/classes/java/debug"))
+        property("sonar.jacoco.reportPaths", "reports/jacoco/test/testExec.xml")
     }
 }
 
